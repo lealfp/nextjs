@@ -24,6 +24,9 @@ npx shadcn-ui@latest add alert-dialog
 npx shadcn@latest add skeleton
 npx shadcn@latest add scroll-area
 
+npx shadcn@latest add dialog
+npx shadcn@latest add label
+npx shadcn@latest add tabs
 # or
 yarn dev
 # or
