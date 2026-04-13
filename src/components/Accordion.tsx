@@ -1,6 +1,6 @@
 "use client";
 
-import AccordionItem from "./AccordionItem";
+// import AccordionItem from "./AccordionItem";
 
 import { useState } from "react";
 
