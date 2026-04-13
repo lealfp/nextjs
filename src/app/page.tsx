@@ -7,7 +7,7 @@ import WhoToFollow from "@/components/WhoToFollow";
 import { currentUser } from "@clerk/nextjs/server";
 import Sidebar from "@/components/Sidebar";
 import SidebarHome from "@/components/SidebarHome";
-import Cards from "@/components/Cards";
+// import Cards from "@/components/Cards";
 import Accordion from "@/components/Accordion";
 
 export default async function Home() {
