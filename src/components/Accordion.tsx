@@ -52,7 +52,7 @@ export default function Accordion() {
 
       <div
         className={`transition-all duration-300 overflow-hidden ${
-          open ? "max-h-1500 mt-4" : "max-h-0"
+          !open ? "max-h-1500 mt-4" : "max-h-0"
         }`}
       >
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
