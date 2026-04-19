@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://lealpantoja.com.br
+
+# Sitemaps
+Sitemap: https://lealpantoja.com.br/sitemap.xml

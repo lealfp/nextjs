@@ -27,6 +27,8 @@ npx shadcn@latest add scroll-area
 npx shadcn@latest add dialog
 npx shadcn@latest add label
 npx shadcn@latest add tabs
+npm install react-icons
+npm install next-sitemap
 # or
 yarn dev
 # or

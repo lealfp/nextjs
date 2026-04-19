@@ -4,6 +4,7 @@ import Link from "next/link";
 import { SignInButton, UserButton } from "@clerk/nextjs";
 import ModeToggle from "./ModeToggle";
 import { currentUser } from "@clerk/nextjs/server";
+import { FaBlogger } from "react-icons/fa6";
 
 async function DesktopNavbar() {
   const user = await currentUser();
@@ -19,44 +20,14 @@ async function DesktopNavbar() {
         </Link>
       </Button>
 
-      {user ? (
-        <>
-          {/*<Button variant="ghost" className="flex items-center gap-2" asChild>
-            <Link href="/notifications">
-              <BellIcon className="w-4 h-4" />
-              <span className="hidden lg:inline">Notifications</span>
-            </Link>
-          </Button>*/}
-          {/*<Button variant="ghost" className="flex items-center gap-2" asChild>
-            <Link href="/about">
-              <BellIcon className="w-4 h-4" />
-              <span className="hidden lg:inline">Sobre</span>
-            </Link>
-          </Button>*/}
-          {/*<Button variant="ghost" className="flex items-center gap-2" asChild>
-            <Link href="/portfolio">
-              <BellIcon className="w-4 h-4" />
-              <span className="hidden lg:inline">Portfólio</span>
-            </Link>
-          </Button>*/}
-          {/*<Button variant="ghost" className="flex items-center gap-2" asChild>
-            <Link
-              href={`/profile/${
-                user.username ??
-                user.emailAddresses[0].emailAddress.split("@")[0]
-              }`}
-            >
-              <UserIcon className="w-4 h-4" />
-              <span className="hidden lg:inline">Profile</span>
-            </Link>
-          </Button>*/}
-          <UserButton />
-        </>
-      ) : (
-        <SignInButton mode="modal">
-          <Button variant="default">Sign In</Button>
-        </SignInButton>
-      )}
+      <Button variant="ghost" className="flex items-center gap-2" asChild>
+        <Link href="/blog">
+          <FaBlogger />
+          {/*<GrBlog />*/}
+          {/*<BellIcon className="w-4 h-4" />*/}
+          <span className="hidden lg:inline">Blog</span>
+        </Link>
+      </Button>
     </div>
   );
 }

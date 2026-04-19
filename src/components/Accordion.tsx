@@ -40,9 +40,10 @@ export default function Accordion() {
     <section className="max-w-3xl mx-auto py-10">
       <div
         onClick={() => setOpen(!open)}
-        className="flex justify-between items-center cursor-pointer"
+        className="flex justify-between items-center cursor-pointer px-5 py-4 rounded-xl bg-muted/40 hover:bg-muted/70 border border-border transition-all duration-200"
       >
-        <h3 className="text-xl font-semibold text-3xl font-semibold">
+        {/*<h3 className="text-xl font-semibold text-3xl font-semibold #447405">*/}
+        <h3 className="text-2xl font-semibold tracking-tight">
           Portfolio <span className="text-gray-500">({projects.length})</span>
         </h3>
 
@@ -59,27 +60,24 @@ export default function Accordion() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl shadow-md p-6 hover:shadow-xl transition"
+              className="bg-background rounded-2xl shadow-md p-6 hover:shadow-xl transition border border-border"
             >
               <h3 className="text-xl font-semibold mb-3">{project.title}</h3>
 
-              <p className="text-gray-600 mb-4">{project.description}</p>
+              <p className=" mb-4">{project.description}</p>
 
               <div className="flex flex-wrap gap-2 mb-4">
                 {project.tech.map((tech, i) => (
                   <span
                     key={i}
-                    className="bg-gray-100 text-sm px-3 py-1 rounded-full"
+                    className="bg-gray-100 text-background text-sm px-3 py-1 rounded-full"
                   >
                     {tech}
                   </span>
                 ))}
               </div>
 
-              <a
-                href={project.link}
-                className="text-blue-600 font-medium hover:underline"
-              >
+              <a href={project.link} className=" font-medium hover:underline">
                 Ver projeto →
               </a>
             </div>
