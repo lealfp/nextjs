@@ -214,7 +214,7 @@ export default async function Home() {
       {/* Projetos */}
 
       <footer className="text-center py-10 border-t text-gray-500 bg-[#f5f5f5]">
-        © {new Date().getFullYear()} Fagner Leal. Todos os direitos reservados.
+        © {new Date().getFullYear()} Fagner Leal. All rights reserved.
       </footer>
     </main>
   );
