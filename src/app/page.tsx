@@ -104,13 +104,14 @@ export default async function Home() {
                 </h3>
                 <br />
                 Holds a Bachelor's degree (2014) in Computer Science from the
-                Federal University of Pará (UFPA) and Master's (2016) and
-                Doctorate (2025) degrees from the State University of Campinas
-                (UNICAMP), at the Institute of Computing (IC).
+                Universidade Federal do Pará (UFPA), and a Master's degree
+                (2016) and a Doctoral degree (2025) from the Universidade
+                Estadual de Campinas (UNICAMP), at the Institute of Computing
+                (IC).
                 <br /> <br />
-                Currently working on Universidade Federal do Pará as Technology
-                Information Analyst. Hw works maintaing the administrative
-                systems, like: SIPAC, RU module, etc.
+                Currently workds at the Universidade Federal do Pará as an
+                Information Technology Analyst, maintaing the administrative
+                systems such as SIPAC and the RU module.
                 <br /> <br />
                 Experience focuses on developing modern digital solutions.
                 Expertise includes creating web applications using technologies
@@ -119,30 +120,6 @@ export default async function Home() {
                 striving to combine performance, aesthetics, and usability.
                 <br /> <br />
                 Available for select freelance opportunities.
-                {/*Possui títulos de Bacharel (2014) em Ciência da Computação pela
-                Universidade Federal do Pará (UFPA) e de Mestre (2016) e Doutor
-                (2025) pela Universidade Estadual de Campinas (UNICAMP), no
-                Instituto de Computação (IC).
-                Com atuação no desenvolvimento de soluções digitais modernas.
-                Experiência na criação de aplicações web utilizando tecnologias
-                como Node.js e Java, com foco na construção de interfaces
-                limpas, funcionais e com boa experiência para o usuário,
-                buscando sempre unir desempenho, estética e usabilidade.*/}
-                {/*
-                longo da trajetória, foram desenvolvidos projetos que envolvem
-                desde a estruturação de páginas e sistemas até a implementação
-                de funcionalidades interativas, como componentes dinâmicos,
-                integração com APIs e otimização para diferentes dispositivos.
-                Também há experiência na configuração de deploys, domínios e
-                ambientes de produção, garantindo que as aplicações estejam
-                acessíveis, seguras e performáticas. As habilidades incluem
-                desenvolvimento front-end moderno, organização de código, uso de
-                boas práticas com componentes reutilizáveis e adaptação a
-                diferentes necessidades de projeto. Além disso, há um
-                compromisso contínuo com o aprendizado e a evolução técnica,
-                acompanhando as tendências do ecossistema web.
-                A seguir, são apresentados alguns dos projetos desenvolvidos,
-                que refletem a evolução prática e técnica na área.*/}
                 <Accordion />
                 <section className="max-w-3xl mx-auto ">
                   <div
@@ -210,12 +187,6 @@ export default async function Home() {
           </div>
         </div>
       </div>
-
-      {/* Projetos */}
-
-      <footer className="text-center py-10 border-t text-gray-500 bg-[#f5f5f5]">
-        © {new Date().getFullYear()} Fagner Leal. All rights reserved.
-      </footer>
     </main>
   );
 }

@@ -1,10 +1,11 @@
 import { BellIcon, HomeIcon, UserIcon } from "lucide-react";
+import { TbBrandBlogger } from "react-icons/tb";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { SignInButton, UserButton } from "@clerk/nextjs";
 import ModeToggle from "./ModeToggle";
 import { currentUser } from "@clerk/nextjs/server";
-import { FaBlogger } from "react-icons/fa6";
+// import { FaBlogger } from "react-icons/fa6";
 
 async function DesktopNavbar() {
   const user = await currentUser();
@@ -22,7 +23,7 @@ async function DesktopNavbar() {
 
       <Button variant="ghost" className="flex items-center gap-2" asChild>
         <Link href="/blog">
-          <FaBlogger />
+          <TbBrandBlogger />
           {/*<GrBlog />*/}
           {/*<BellIcon className="w-4 h-4" />*/}
           <span className="hidden lg:inline">Blog</span>

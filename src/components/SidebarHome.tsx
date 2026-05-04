@@ -8,6 +8,7 @@ import { Avatar, AvatarImage } from "./ui/avatar";
 import { Separator } from "./ui/separator";
 import { LinkIcon, MapPinIcon } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
+import { MdOutlineEmail } from "react-icons/md";
 async function SidebarHome() {
   // const authUser = await currentUser();
   // if (!authUser) return <UnAuthenticatedSidebar />;
@@ -87,13 +88,30 @@ async function SidebarHome() {
         <CardContent>
           <div className="flex flex-col items-center text-center">
             <Avatar className="w-20 h-20 border-2 ">
-              <AvatarImage src={"/personalphoto.png"} />
+              <AvatarImage src={"/assets/personalphoto.png"} />
             </Avatar>
           </div>
           <div className="mt-4 space-y-1 text-center">
             <p className="text-muted-foreground mb-4 text-center">
-              📍 Belém, Brazil
+              <div className="flex items-center text-muted-foreground">
+                <MapPinIcon className="w-4 h-4 mr-2" />
+                Belém, Brazil
+              </div>
             </p>
+
+            <p className="text-muted-foreground mb-4 text-center">
+              <div className="flex items-center text-muted-foreground">
+                <MdOutlineEmail className="w-4 h-4 mr-2" />
+                pantoja.ti@gmail.com
+              </div>
+            </p>
+
+            {/*<p className="text-muted-foreground mb-4 text-left text-x20">
+              <div className="flex items-left text-muted-foreground">
+                http://lattes.cnpq.br/3730346542804597
+              </div>
+            </p>*/}
+
             <a
               href="https://wa.me/5591980446694"
               target="_blank"
@@ -105,15 +123,9 @@ async function SidebarHome() {
                          transition"
             >
               <FaWhatsapp className="text-x5 " />
-              {/**/}
               +55 91 98044-6694
               {/*Fale comigo no WhatsApp 💬 Fale comigo*/}
             </a>
-            <h3 className="text-left text-x5 ">pantoja.ti@gmail.com</h3>
-            {/*<p className="text-sm text-muted-foreground">pantoja.ti@gmail.com</p>*/}
-            <p className="text-left text-x8  ">
-              http://lattes.cnpq.br/3730346542804597
-            </p>
           </div>
           {/*<p className="text-left text-muted-foreground mb-4">
               Email: pantoja.ti@gmail.com
