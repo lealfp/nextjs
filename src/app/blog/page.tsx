@@ -155,7 +155,7 @@ export default async function BlogPage() {
           excerpt={heroPost.excerpt}
         />
 
-        {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+        {/*{morePosts.length > 0 && <MoreStories posts={morePosts} />}*/}
       </Container>
 
       {/*<ul className="space-y-8">
