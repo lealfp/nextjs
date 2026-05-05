@@ -112,7 +112,7 @@ export default async function BlogPage() {
                     <DateFormatter dateString={post.date} />
                   </div>
                   <div className="flex items-center gap-4 text-sm text-gray-500 mt-3">
-                    <span>⭐ {post.likes}</span>
+                    <span>⭐ {}</span>
                     {/*<span>👁 {post.views}</span>*/}
                     <span>💬 {}</span>
                   </div>
