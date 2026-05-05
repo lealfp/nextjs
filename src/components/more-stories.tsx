@@ -52,13 +52,12 @@ export default function MoreStories({ morePosts }: Props) {
         </button>
       </div>*/}
 
-      <div className="space-y-10">
+      {/*<div className="space-y-10">
         {posts.map((post) => (
           <article
             key={post.id}
             className="flex justify-between gap-6 group cursor-pointer"
           >
-            {/* TEXTO */}
             <div className="flex-1">
               <p className="text-sm text-gray-500 mb-1">{post.author}</p>
 
@@ -68,7 +67,6 @@ export default function MoreStories({ morePosts }: Props) {
 
               <p className="text-gray-600 mt-1 line-clamp-2">{post.subtitle}</p>
 
-              {/* META */}
               <div className="flex items-center gap-4 text-sm text-gray-500 mt-3">
                 <span>⭐ {post.date}</span>
                 <span>👁 {post.views}</span>
@@ -76,7 +74,6 @@ export default function MoreStories({ morePosts }: Props) {
               </div>
             </div>
 
-            {/* IMAGEM */}
             <div className="w-32 h-24 flex-shrink-0">
               <img
                 src={post.image}
@@ -86,7 +83,7 @@ export default function MoreStories({ morePosts }: Props) {
             </div>
           </article>
         ))}
-      </div>
+      </div>*/}
     </section>
   );
 }
