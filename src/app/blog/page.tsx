@@ -114,7 +114,7 @@ export default async function BlogPage() {
                   <div className="flex items-center gap-4 text-sm text-gray-500 mt-3">
                     <span>⭐ {post.likes}</span>
                     {/*<span>👁 {post.views}</span>*/}
-                    <span>💬 {post.comments}</span>
+                    <span>💬 {}</span>
                   </div>
                 </div>
                 <div>
