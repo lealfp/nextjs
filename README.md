@@ -9,26 +9,6 @@ npx create-next-app@latest
 
 npm run dev
 
-
-npx shadcn@latest add sheet
-npm i install prisma --save-dev
-npm i @prisma/client
-pnpm add prisma@6.19.2 @prisma/client@6.19.2
-npx prisma init
-npm i react-hot-toast
-npx prisma db push
-npx shadcn@latest add card
-npx shadcn@latest add separator
-npx shadcn@latest add avatar
-npx shadcn-ui@latest add alert-dialog
-npx shadcn@latest add skeleton
-npx shadcn@latest add scroll-area
-
-npx shadcn@latest add dialog
-npx shadcn@latest add label
-npx shadcn@latest add tabs
-npm install react-icons
-npm install next-sitemap
 # or
 yarn dev
 # or
@@ -57,3 +37,32 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+## Libs installed
+
+```
+npx shadcn@latest add sheet
+npm i install prisma --save-dev
+npm i @prisma/client
+pnpm add prisma@6.19.2 @prisma/client@6.19.2
+npx prisma init
+npm i react-hot-toast
+npx prisma db push
+npx shadcn@latest add card
+npx shadcn@latest add separator
+npx shadcn@latest add avatar
+npx shadcn-ui@latest add alert-dialog
+npx shadcn@latest add skeleton
+npx shadcn@latest add scroll-area
+
+npx shadcn@latest add dialog
+npx shadcn@latest add label
+npx shadcn@latest add tabs
+npm install react-icons
+npm install next-sitemap
+
+npm install classnames --save
+npm install gray-matter
+npm install remark-html
+```

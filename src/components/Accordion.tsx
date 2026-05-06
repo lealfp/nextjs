@@ -1,15 +1,23 @@
 "use client";
 
 // import AccordionItem from "./AccordionItem";
+import Link from "next/link";
 
 import { useState } from "react";
 
 const projects = [
   {
+    title: "Blog",
+    description:
+      "Sistema para criação, edição e compartilhamento de posts ao estilo blog.",
+    tech: ["Next.js", "Prisma", "Markdown"],
+    link: "blog",
+  },
+  {
     title: "Rede Social",
     description:
       "Rede social com autenticação de usuários, criação e interação em publicações, sistema de seguidores.",
-    tech: ["Next.js", "Prisma", "PostgreSQL"],
+    tech: ["Next.js", "Clerk", "Prisma", "PostgreSQL"],
     link: "redesocial",
   },
   {
@@ -17,7 +25,7 @@ const projects = [
     description:
       "Plataforma web para gestão acadêmica com autenticação, controle de acesso e pagamentos.",
     tech: ["Next.js", "Prisma", "PostgreSQL"],
-    link: "#",
+    // link: "#",
   },
   {
     title: "Loja online.",
@@ -29,7 +37,7 @@ const projects = [
     title: "Controle de Acesso via catraca eletrônica",
     description: "Serviço eCommerce utilizando Shopify",
     tech: ["SIG-UFRN", "Arduino", "Java", "MicroServiços"],
-    link: "#",
+    // link: "#",
   },
 ];
 
@@ -62,7 +70,11 @@ export default function Accordion() {
               key={index}
               className="bg-background rounded-2xl shadow-md p-6 hover:shadow-xl transition border border-border"
             >
-              <h3 className="text-xl font-semibold mb-3">{project.title}</h3>
+              <h3 className="text-xl font-semibold mb-3">
+                <a href={project.link} className=" font-medium hover:underline">
+                  {project.title}
+                </a>
+              </h3>
 
               <p className=" mb-4">{project.description}</p>
 

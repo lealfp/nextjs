@@ -22,8 +22,9 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Socially",
-  description: "A modern social media application powered by Next.js",
+  title: "Home | Fagner Leal Pantoja",
+  description:
+    "Personal website of Fagner Leal Pantoja, a Fullstack Developer. Available for select freelance projects.",
 };
 
 export default async function RootLayout({
@@ -49,6 +50,9 @@ export default async function RootLayout({
             </div>
             <Toaster />
           </ThemeProvider>
+          <footer className="text-center py-10 border-t text-gray-500 bg-[#f5f5f5]">
+            © {new Date().getFullYear()} Fagner Leal. All rights reserved.
+          </footer>
         </body>
       </html>
     </ClerkProvider>
