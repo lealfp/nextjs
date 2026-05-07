@@ -44,7 +44,7 @@ export default async function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            <div className="min-h-screen">
+            <div className="min-h-screen bg-background text-foreground">
               <Navbar />
               {children}
             </div>

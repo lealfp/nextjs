@@ -66,3 +66,5 @@ npm install classnames --save
 npm install gray-matter
 npm install remark-html
 ```
+
+Blog feito baseado em https://github.com/vercel/next.js/tree/canary/examples/blog-starter

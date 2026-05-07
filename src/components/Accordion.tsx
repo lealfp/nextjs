@@ -82,7 +82,7 @@ export default function Accordion() {
                 {project.tech.map((tech, i) => (
                   <span
                     key={i}
-                    className="bg-gray-100 text-background text-sm px-3 py-1 rounded-full"
+                    className="bg-gray-50 text-background text-sm px-3 py-1 rounded-full"
                   >
                     {tech}
                   </span>

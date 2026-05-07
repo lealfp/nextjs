@@ -20,7 +20,7 @@ async function Navbar() {
     console.log("cjhegou");
     const { userId } = await auth();
     const users = await prisma.user.findMany();
-    console.log(users);
+    // console.log(users);
   } catch (error) {
     console.log("Error in syncUser", error);
   }
