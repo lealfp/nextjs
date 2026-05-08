@@ -9,10 +9,12 @@ author:
 ogImage:
   url: "/assets/cover.jpg"
 ---
-# A bibliographic survey of Neural Language Models
 
 
-## Abstract
+
+
+
+# Abstract
 
 
 This text presents a literature review of Language Models (LM), covering two main topics: 
@@ -56,7 +58,7 @@ Therefore, this survey details the history, the development and the mechanisms o
 
 
 <!-- # This is a Heading h1 -->
-## 1. Introduction
+# 1. Introduction
 
 
 
@@ -68,91 +70,61 @@ Manning and Schütze<sup>[[1](#ref1)]</sup>
 classify NLP methods into statistical and non-statistical approaches. Statistical approaches rely on patterns that commonly occur in a language, while non-statistical approaches focus on mapping and computationally implementing the rules that structure the language. The distinction between statistical and non-statistical approaches has roots grounded in the philosophical debate surrounding the perspectives of Rationalism and Empiricism<sup>[[1](#ref1)]</sup>. 
 
 
+In the epistemological realm<sup>[[2](#ref2)]</sup>, Rationalism claims the ideas of deductive reasoning are possible because they are innate, prior to all experience. In turn, Empiricism states that none of our ideas are innate, and the mind would be a blank tablet when we are born. Subsequently, Kant considered both the concept of active mind (from rationalism) and the role of sensations (from empiricism) as essentials in knowledge acquisition. In turn, Bertrand Russell "explicitly rejected the existence of innate ideas". The debate remains open and has led to the development of several philosophical schools.
 
 
-## Referências
-1. <a id="ref1"></a> Autor, *Título*, Ano.
+In the field of Linguistics, the rationalist perspective is characterized by the belief in the existence of an innate language fixed in the human brain through genetic inheritance. Advocated by Noam Chomsky<sup>[[1](#ref1)]</sup>, rationalism has been crucial to the development of the theory of Formal Languages, which serves as the foundation for current programming languages. Formal languages constitute a special class of language that lacks ambiguity and, therefore, can be interpreted/compiled by computers. The ability to interpret a language in a non-ambiguous manner is essential for a computer to execute commands instructed by humans through a source code<sup>[[1](#ref1)]</sup>.
 
 
-###### This is a Heading h6
-## Emphasis
+In contrast to programming languages, natural languages are inherently ambiguous, since a word or phrase can have more than one meaning<sup>[[3](#ref3)]</sup>. In natural language cases, the empiricist perspective assumes that, instead of pre-constructed linguistic structures, the human mind possesses generic operations of association, generalization, and pattern recognition. These cognitive abilities, combined with a rich sensory system, enable humans to learn detailed language structures. This hypothesis forms the basis of Machine Learning methods that use statistical models to recognize patterns and complex structures in a dataset. This statistical approach is grounded in the Information Theory developed by Claude Shannon<sup>[[1](#ref1)]</sup>.
 
 
-*This text will be italic*  
-_This will also be italic_
+Manning and Schütze<sup>[[1](#ref1)]</sup> point out that "the difference between the approaches is not absolute but one of degree", as rationalism believes "the key parts of language are innate – hardwired in the brain at birth as part of the human genetic inheritance" while empiricism believes in an innate capacity to develop language through generalizations such that "a baby’s brain begins with general operations for association, pattern recognition, and generalization, and that these can be applied to a rich sensory input available to the child to learn the detailed structure of natural language".
 
 
-**This text will be bold**  
-__This will also be bold__
+This philosophical debate remains an open question; however, its practical utility is valuable as it theoretically underpins various areas of computer science.
 
 
-_You **can** combine them_
+More recently, statistical approaches have advanced the state-of-the-art in various NLP tasks. This progress can be attributed to, among other factors: (1) advances in computational capacity; (2) recent deep neural network models capable of retaining significantly more information than previously proposed neural models; and (3) the development of more efficient techniques for handling the vast amount of information available on the Web.
 
 
-## Lists
+The rest of this text is organized as follows: sections 2 and 3 give some background on foundations of Neural Networks, Deep Neural Networks, Transformers, as well as the history and development of the so-called Neural Language Models. Sections 4 and 5 review related work of two case studies that involve neural networks and transformers: Topic Modeling and Semantic Annotations of virtual patients. Section 6 briefly discusses more recent work developed in research in Language Models. This is followed by a section that critically analyzes language models addressing some interdisciplinary aspects, finishing with concluding remarks.
 
 
-### Unordered
+## 2. Deep Neural Networks
 
 
-* Item 1
-* Item 2
-* Item 2a
-* Item 2b
-    * Item 3a
-    * Item 3b
+Several recent advances in the field of Natural Language Processing (NLP) are attributed to the mellowing of Deep Neural Network models, which are more sophisticated types of Artificial Neural Networks.
+This section describes some relevant issues in Neural Network architectures, followed in the subsequent section by Language Models in the context of such networks
 
 
-### Ordered
+### 2.1 Artificial Neural Networks
 
 
-1. Item 1
-2. Item 2
-3. Item 3
-    1. Item 3a
-    2. Item 3b
+An artificial neural network — a computational abstraction inspired by the biological nervous system — is an interconnected network of artificial neurons organized in layers. Typically, neural networks perform Supervised Learning, where the network receives successive sets of pre-labeled training samples and must infer the corresponding output for each input sample. For example, a neural network can be trained to recognize cancerous tumors in computed tomography images based on labeled images previously presented to the model. After this training phase, the neural network is capable of making inferences about new images that were not observed by the model during its network training<sup>[[4](#ref4)]</sup>.
 
 
-## Images
+#### Example - Sentiment Analysis through Neural Networks
 
 
-![This is an alt text.](/image/Markdown-mark.svg "This is a sample image.")
 
 
-## Links
+Sentiment Analysis through neural networks is an NLP task whose objective is to classify sentences based on their sentiment polarity **`C={Positive, Negative, Neutral}`**. In the training phase, iteratively the network is fed by pairs of sentences and labels, in the format **[sentence,label]** contained in the training set. In each training step, let **s** be the sentence to be classified, **`y`** the corresponding label, and **`h`** the output of the classification, representing the class inferred for **`s`** by the algorithm. The sentence **`s`** is represented by a feature vector **`x=(x1, x2, ..., xn)`**. Let **`\theta = (\theta_1,\theta_2,...,\theta_{m})`** be a vector of parameters (weights) of each neuron.
+Classification works as follows. Vector **x** is propagated through the network's layers, adjusting the parameters **\theta** of each neuron based on their contribution to constructing the output **y**. Figure <sup>[[1](#neural_network)]</sup> illustrates a neural network classifying the sentence "I liked this movie". The neural network produces an output vector **`o=(o_{1, o_{2}, o_3)`** containing the algorithm's hypotheses regarding the probabilities of the sentence belonging to each of the possible classes in **C**, where the highest one is chosen as the algorithm’s hypothesis **`h=positive`**.
+
+![image](/assets/blog/neural_network.jpg)
+*<a id="neural_network"> Figure 1: Neural network performing sentiment analysis. Adapted from Kubat [[4](#ref4)]</a>.*
+
+Each neuron in the network has a transfer function (or activation function) **f(\Sigma)** that operates on the weight parameter **\theta_{i}** of the neuron and the input feature $**x_{i}**$, as illustrated in Figure~\ref{fig:artificial-neuron}. Several transfer functions can be employed, including the sigmoid function:
+
+# References
+[1] <a id="ref1"></a> Manning, C., Schütze, H., 1999, **Foundations of statistical natural language processing**, MIT Press.
 
 
-You may be using [Markdown Live Preview](https://markdownlivepreview.com/).
+[2] <a id="ref2"></a>Barlas, Y., Carpenter, S., 1900, **Philosophical roots of model validation: two paradigms**, Wiley Online Library.
 
 
-## Blockquotes
+[3] <a id="ref3"></a>Goertzel, B., 2013, **Chaotic logic: Language, thought, and reality from the perspective of complex systems science**, Springer Science \& Business Media.
 
 
-> Markdown is a lightweight markup language with plain-text-formatting syntax, created in 2004 by John Gruber with Aaron Swartz.
->
->> Markdown is often used to format readme files, for writing messages in online discussion forums, and to create rich text using a plain text editor.
-
-
-## Tables
-
-
-| Left columns  | Right columns |
-| ------------- |:-------------:|
-| left foo      | right foo     |
-| left bar      | right bar     |
-| left baz      | right baz     |
-
-
-## Blocks of code
-
-
-```
-let message = 'Hello world';
-alert(message);
-```
-
-
-## Inline code
-
-
-This web site is using `markedjs/marked`.
+[4] <a id="ref4"></a>Kubat, M., 2017, **An introduction to machine learning**, Springer.

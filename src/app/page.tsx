@@ -10,7 +10,8 @@ import SidebarHome from "@/components/SidebarHome";
 // import Cards from "@/components/Cards";
 import Accordion from "@/components/Accordion";
 // import { FileText } from "lucide-react";
-import { FaRegFilePdf } from "react-icons/fa6";
+import ScholarSection from "@/components/scholar-section";
+import ExpertiseSection from "@/components/expertise-section";
 
 export default async function Home() {
   // const [showPortfolio, setShowPortfolio] = useState(true);
@@ -145,89 +146,9 @@ export default async function Home() {
                 aesthetics, and usability.
                 <br /> <br />
                 Available for select freelance opportunities.
-                <section className="max-w-3xl mx-auto py-10">
-                  <div
-                    className="flex justify-between items-center cursor-pointer
-                               px-5 py-4 rounded-xl
-                               bg-muted/40 hover:bg-muted/70
-                               border border-border
-                               transition-all duration-200"
-                  >
-                    <h3 className="text-2xl font-semibold tracking-tight">
-                      Scholar
-                    </h3>
-                  </div>
-                  <div className="grid gap-4 p-4 border rounded-xl shadow-sm hover:shadow-md transition">
-                    Active in the areas of Natural Language Processing,
-                    Information Retrieval, Language Models, Artificial
-                    Intelligence, Databases, Software Engineering, and
-                    Programming.
-                    <br /> <br />
-                    Collaborates on research in Medicine and Biology.
-                    <br /> <br />
-                    <h2 className="text-xl font-semibold mb-4">Publications</h2>
-                    <ul className="space-y-3  leading-relaxed">
-                      {artigos.map((artigo, index) => (
-                        <li key={index} className="flex gap-2 text-left">
-                          {/*<span className="text-gray-500">[{index + 1}]</span>*/}
-                          <FaRegFilePdf className="mt-1 shrink-0" />
-                          <a
-                            href={artigo.link}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            // className="flex hover:underline"
-                            className="flex items-start gap-2 hover:underline"
-                          >
-                            <span className="">
-                              {artigo.autores}, {artigo.ano},{" "}
-                              <span className="font-bold">{artigo.titulo}</span>
-                              , {artigo.revista}.{/*<FaRegFilePdf />*/}
-                            </span>
-                            {/*<FileText className="w-4 h-4 mt-1 text-red-500" />*/}
-                          </a>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </section>
+                <ScholarSection />
                 <Accordion />
-                <section className="max-w-3xl mx-auto ">
-                  <div
-                    className="flex justify-between items-center cursor-pointer
-                               px-5 py-4 rounded-xl
-                               bg-muted/40 hover:bg-muted/70
-                               border border-border
-                               transition-all duration-200"
-                  >
-                    <h3 className="text-2xl font-semibold tracking-tight ">
-                      Expertise
-                    </h3>
-                  </div>
-                  <div className="grid gap-4 p-4 border rounded-xl shadow-sm hover:shadow-md transition">
-                    <ul className="space-y-3  leading-relaxed">
-                      {items.map((item, index) => (
-                        <li key={index} className="flex gap-2 text-left">
-                          {/*<span className="text-gray-500">[{index + 1}]</span>*/}
-                          {item}
-                          {/*<FaRegFilePdf className="mt-1 shrink-0" />*/}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  {/*<ul className="grid gap-4 p-4 border rounded-xl shadow-sm hover:shadow-md transition">
-                    {items.map((item, index) => (
-                      <li
-                        key={index}
-                        // className="group relative overflow-hidden rounded-2xl border border-zinc-200 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg dark:border-zinc-800 dark:bg-zinc-900"
-                        className="rounded-xl border border-zinc-200 bg-zinc-50 px-4 py-3 text-sm text-zinc-700 transition hover:border-zinc-300 hover:bg-white dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-300"
-                        // className="p-4 border rounded-xl shadow-sm hover:shadow-md transition"
-                      >
-                        {item}
-                      </li>
-                    ))}
-                  </ul>*/}
-                </section>
+                <ExpertiseSection />
               </section>
               {/*<section className="max-w-6xl mx-auto px-6 pb-20">*/}
             </div>
