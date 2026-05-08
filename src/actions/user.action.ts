@@ -8,7 +8,7 @@ export async function syncUser() {
   try {
     const { userId } = await auth();
     const user = await currentUser();
-    console.log(user);
+    // console.log(user);
     if (!userId || !user) return;
 
     const existingUser = await prisma.user.findUnique({

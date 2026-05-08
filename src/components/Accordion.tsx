@@ -61,7 +61,7 @@ export default function Accordion() {
 
       <div
         className={`transition-all duration-300 overflow-hidden ${
-          !open ? "max-h-1500 mt-4" : "max-h-0"
+          !open ? "max-h-1500 mt-1" : "max-h-0"
         }`}
       >
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -82,7 +82,7 @@ export default function Accordion() {
                 {project.tech.map((tech, i) => (
                   <span
                     key={i}
-                    className="bg-gray-100 text-background text-sm px-3 py-1 rounded-full"
+                    className="bg-gray-50 text-background text-sm px-3 py-1 rounded-full"
                   >
                     {tech}
                   </span>

@@ -41,46 +41,32 @@ export default async function BlogPage() {
   const morePosts = allPosts.slice(1);
   const posts = allPosts;
   return (
-    // <main className="max-w-5xl mx-auto px-4 py-10">
-    //   {/* TABS */}
-    //   <div className="flex gap-6 border-b mb-8">
-    //     <button className="pb-2 border-b-2 border-black font-medium">
-    //       For you
-    //     </button>
-    //     <button className="pb-2 text-gray-500 hover:text-black">
-    //       Featured
-    //     </button>
-    //   </div>
-
-    //   {/* LISTA */}
-
-    // </main>
-    //   );
-    // }
     <main className="">
       <header className="w-full border-b border-gray-200 bg-primary sticky top-16 backdrop-blur supports-[backdrop-filter]:bg-primary/90">
-        <div className="max-w-6xl mx-auto px-4 py-6">
-          <section className="flex items-center justify-between">
-            <h1 className="text-4xl md:text-3xl font-bold text-primary-foreground">
-              Blog
-            </h1>
-          </section>
+        {/*<div className="max-w-6xl mx-auto px-4 py-6">*/}
+        <div className="container mx-auto px-5">
+          {/*<section className="flex items-center justify-between">*/}
+          <h1 className="text-4xl md:text-3xl font-bold text-primary-foreground">
+            Blog
+          </h1>
+          {/*</section>*/}
 
           {/* DIVISOR */}
-          <div className="my-4 h-px bg-[#085c77]" />
+          {/*<div className="my-4 h-px bg-[#085c77]" />*/}
+          <div className="my-4 h-px bg-primary-foreground/30" />
 
           {/* ID SECTION */}
-          <section className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-            {/* ESQUERDA */}
-            <div className="flex items-center gap-3">
-              {/*<img src="/orcid-logo.svg" alt="orcid" className="w-8 h-8" />*/}
+          {/*<section className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">*/}
+          {/* ESQUERDA */}
+          <div className="flex items-center gap-3">
+            {/*<img src="/orcid-logo.svg" alt="orcid" className="w-8 h-8" />*/}
 
-              <h1 className="text-gray-700 text-sm md:text-base text-primary-foreground ">
-                Thoughts, studies, research and insights by Fagner Leal Pantoja
-                {/*https://orcid.org/0000-0002-3928-5432*/}
-              </h1>
-            </div>
-          </section>
+            <h2 className="text-gray-700 text-sm md:text-base text-primary-foreground/80 ">
+              Thoughts, studies, research and insights
+              {/*https://orcid.org/0000-0002-3928-5432*/}
+            </h2>
+          </div>
+          {/*</section>*/}
         </div>
       </header>
 
@@ -146,14 +132,14 @@ export default async function BlogPage() {
           ))}
         </div>
 
-        <HeroPost
+        {/*<HeroPost
           title={heroPost.title}
           coverImage={heroPost.coverImage}
           date={heroPost.date}
           author={heroPost.author}
           slug={heroPost.slug}
           excerpt={heroPost.excerpt}
-        />
+        />*/}
 
         {/*{morePosts.length > 0 && <MoreStories posts={morePosts} />}*/}
       </Container>

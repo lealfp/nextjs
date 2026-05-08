@@ -92,12 +92,12 @@ async function SidebarHome() {
             </Avatar>
           </div>
           <div className="mt-4 space-y-1 text-center">
-            <p className="text-muted-foreground mb-4 text-center">
+            <div className="text-muted-foreground mb-4 text-center">
               <div className="flex items-center text-muted-foreground">
                 <MapPinIcon className="w-4 h-4 mr-2" />
                 Belém, Brazil
               </div>
-            </p>
+            </div>
 
             <p className="text-muted-foreground mb-4 text-center">
               <div className="flex items-center text-muted-foreground">
