@@ -40,12 +40,12 @@ export default function ExpertiseSection() {
       >
         <div className="grid md:grid-cols-2 lg:grid-cols-1  bg-background rounded-2xl shadow-md p-6 hover:shadow-xl transition border border-border">
           {/*<div
-          className="grid md:grid-cols-2 lg:grid-cols-1  bg-background rounded-2xl shadow-md p-6 hover:shadow-xl transition border border-border flex justify-between items-center cursor-pointer
-                     px-5 py-4 rounded-xl
-                     bg-muted/40 hover:bg-muted/70
-                     border border-border
-                     transition-all duration-200"
-        >*/}
+            className="grid md:grid-cols-2 lg:grid-cols-1  bg-background rounded-2xl shadow-md p-6 hover:shadow-xl transition border border-border flex justify-between items-center cursor-pointer
+                      px-5 py-4 rounded-xl
+                      bg-muted/40 hover:bg-muted/70
+                      border border-border
+                      transition-all duration-200"
+          >*/}
           {/*<section className="max-w-3xl mx-auto ">*/}
           {/*<div className="">*/}
           {/*<h3 className="text-2xl font-semibold tracking-tight ">

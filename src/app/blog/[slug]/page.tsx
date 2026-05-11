@@ -8,23 +8,28 @@ import { PostHeader } from "@/components/post-header";
 import Link from "next/link";
 import PostCarousel from "@/components/PostCarousel";
 
-const posts = [
-  {
-    id: "1",
-    title: "Understanding Neural Language Models",
-    excerpt: "An overview of neural language models and their applications.",
-  },
-  {
-    id: "2",
-    title: "Semantic Web in Practice",
-    excerpt: "How semantic technologies improve data understanding.",
-  },
-  {
-    id: "3",
-    title: "Modern Web Development",
-    excerpt: "Best practices using Next.js and modern tools.",
-  },
-];
+// const posts = [
+//   {
+//     id: "1",
+//     title: "Understanding Neural Language Models",
+//     excerpt: "An overview of neural language models and their applications.",
+//   },
+//   {
+//     id: "2",
+//     title: "Semantic Web in Practice",
+//     excerpt: "How semantic technologies improve data understanding.",
+//   },
+//   {
+//     id: "3",
+//     title: "Modern Web Development",
+//     excerpt: "Best practices using Next.js and modern tools.",
+//   },
+// ];
+// export const metadata: Metadata = {
+//   title: "Home | Fagner Leal Pantoja",
+//   description:
+//     "Personal website of Fagner Leal Pantoja, a Fullstack Developer. Available for select freelance projects.",
+// };
 export default async function Blog(props: Params) {
   const params = await props.params;
   const post = getPostBySlug(params.slug);
@@ -77,9 +82,9 @@ export default async function Blog(props: Params) {
           </article>
 
           {/* ✅ CARROSSEL */}
-          <section className="mb-16">
+          {/*<section className="mb-16">
             <PostCarousel posts={posts} />
-          </section>
+          </section>*/}
         </Container>
       </main>
     </>
