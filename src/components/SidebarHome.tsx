@@ -99,12 +99,12 @@ async function SidebarHome() {
               </div>
             </div>
 
-            <p className="text-muted-foreground mb-4 text-center">
-              <div className="flex items-center text-muted-foreground">
-                <MdOutlineEmail className="w-4 h-4 mr-2" />
-                pantoja.ti@gmail.com
-              </div>
-            </p>
+            {/*<p className="text-muted-foreground mb-4 text-center">*/}
+            <div className="flex items-center text-muted-foreground">
+              <MdOutlineEmail className="w-4 h-4 mr-2" />
+              pantoja.ti@gmail.com
+            </div>
+            {/*</p>*/}
 
             {/*<p className="text-muted-foreground mb-4 text-left text-x20">
               <div className="flex items-left text-muted-foreground">

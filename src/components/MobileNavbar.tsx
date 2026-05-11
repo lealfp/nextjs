@@ -1,4 +1,5 @@
 "use client";
+import { TbBrandBlogger } from "react-icons/tb";
 
 import {
   BellIcon,
@@ -61,7 +62,14 @@ function MobileNavbar() {
                 Home
               </Link>
             </Button>
-
+            <Button variant="ghost" className="flex items-center gap-2" asChild>
+              <Link href="/blog">
+                <TbBrandBlogger />
+                {/*<GrBlog />*/}
+                {/*<BellIcon className="w-4 h-4" />*/}
+                <span className="hidden lg:inline">Blog</span>
+              </Link>
+            </Button>
             {isSignedIn ? (
               <>
                 <Button
