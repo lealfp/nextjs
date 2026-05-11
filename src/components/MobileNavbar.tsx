@@ -67,7 +67,7 @@ function MobileNavbar() {
                 <TbBrandBlogger />
                 {/*<GrBlog />*/}
                 {/*<BellIcon className="w-4 h-4" />*/}
-                <span className="hidden lg:inline">Blog</span>
+                <span className="">Blog</span>
               </Link>
             </Button>
             {isSignedIn ? (
