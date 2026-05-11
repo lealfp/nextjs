@@ -1,8 +1,8 @@
 import markdownStyles from "./markdown-styles.module.css";
 
-import ReactMarkdown from "react-markdown";
-import remarkMath from "remark-math";
-import rehypeKatex from "rehype-katex";
+// import ReactMarkdown from "react-markdown";
+// import remarkMath from "remark-math";
+// import rehypeKatex from "rehype-katex";
 type Props = {
   content: string;
 };
