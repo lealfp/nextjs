@@ -4,7 +4,7 @@ excerpt: "This text presents a literature review of Language Models (LM), coveri
 coverImage: "/assets/blog/clusters-all-mpnet-base-v2.png"
 date: "2026-05-11T16:58:00.322Z"
 author:
-  name: Fagner Leal Pantoja
+  name: Fagner Leal Pantoja. In collaboration with Claudia Bauzer Medeiros and André Santanchè
   picture: "/assets/personalphoto.png"
 ogImage:
   url: "/assets/blog/clusters-all-mpnet-base-v2-4.png"
@@ -52,6 +52,8 @@ In fact, obtaining such a computational representation for textual constructs is
 
 Therefore, this survey details the history, the development and the mechanisms of Transformers-based language models. The text concludes with a critical analysis addressing issues regarding applications based on language models.
 
+
+> This post is a shortened and adapted version of a previously published article released as a technical report by the Institute of Computing at the University of Campinas:  [https://www.ic.unicamp.br/~reltech/2024/24-01.pdf](https://www.ic.unicamp.br/~reltech/2024/24-01.pdf) . The original report contains additional details, discussions, and references that were condensed here for readability and accessibility.
 
 <!-- We analyzed the usage of language models for Topic Modeling and for Semantic Annotation of Virtual Patients. -->
 
