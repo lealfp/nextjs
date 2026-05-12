@@ -7,7 +7,7 @@ author:
   name: Fagner Leal Pantoja. In collaboration with Claudia Bauzer Medeiros and André Santanchè
   picture: "/assets/personalphoto.png"
 ogImage:
-  url: "/assets/blog/clusters-all-mpnet-base-v2-4.png"
+  url: "/assets/blog/clusters-all-mpnet-base-v2.png"
 ---
 
 
@@ -51,7 +51,6 @@ In fact, obtaining such a computational representation for textual constructs is
 
 
 Therefore, this survey details the history, the development and the mechanisms of Transformers-based language models. The text concludes with a critical analysis addressing issues regarding applications based on language models.
-
 
 > This post is a shortened and adapted version of a previously published article released as a technical report by the Institute of Computing at the University of Campinas:  [https://www.ic.unicamp.br/~reltech/2024/24-01.pdf](https://www.ic.unicamp.br/~reltech/2024/24-01.pdf) . The original report contains additional details, discussions, and references that were condensed here for readability and accessibility.
 
@@ -392,7 +391,7 @@ We have witnessed a heated research focus around the release of ChatGPT. The Cha
 Recent research focuses on increasing the network size by developing Large Language Models containing billions of parameters [[Tian et al., 2024](#tian2024opportunities)]. GPT-3 contains 175 billions of parameters, Llama 65 B [[Touvron et al., 2023](#touvron2023llama)], Chinchilla 70 B, PaLM 540B, BLOOM 176B [[Le et al., 2022](#le2022bloom)]. Studies [[Hoffmann et al., 2022](#hoffmann2022training)][[Touvron et al., 2023](#touvron2023llama)] have found not necessarily the larger model results to best performance at inference time, but there is a trade-off between the model and dataset sizes such that the best model would be a smaller model trained longer (i.e., on more samples).
 
 
-A recent trend is to incorporate language models into larger systems. For example, DALL-E (https://openai.com/dall-e-3) [[Betker et al., 2023](#betker2023improving)] is a system to generate images from text prompts. Sora (\url{https://openai.com/sora\#research}) is a system capable of generating high-fidelity videos from input text based on diffusion models betker2023improving[[Peebles and Xie, 2023](#peebles2023scalable)]. Gemini [[Anil et al., 2023](#team2023gemini)] is a multimodal model trained on different modalities of data such as image, audio, and video. However, some systems and applications lack academic references to describe the techniques employed and details of integrating the theoretical models in the systems. Usually, the implementation details are referred to in web pages. Many of the recent research on language models are described in technical reports uploaded to repositories which do not account for peer-review processes. This difficulties the scrutiny of the real advancements in this research area and the establishment of a reliable ground of scientific validation.
+A recent trend is to incorporate language models into larger systems. For example, DALL-E ([https://openai.com/dall-e-3](https://openai.com/dall-e-3))  is a system to generate images from text prompts [[Betker et al., 2023](#betker2023improving)]. Sora ([https://openai.com/sora\#research](https://openai.com/sora\#research)) is a system capable of generating high-fidelity videos from input text based on diffusion models [[Peebles and Xie, 2023](#peebles2023scalable)]. Gemini [[Anil et al., 2023](#team2023gemini)] is a multimodal model trained on different modalities of data such as image, audio, and video. However, some systems and applications lack academic references to describe the techniques employed and details of integrating the theoretical models in the systems. Usually, the implementation details are referred to in web pages. Many of the recent research on language models are described in technical reports uploaded to repositories which do not account for peer-review processes. This difficulties the scrutiny of the real advancements in this research area and the establishment of a reliable ground of scientific validation.
 
 There are works focusing on demonstrating the linguistic capabilities of language models. The results of the study by [Tenney et al., 2019](#tenney2019you), suggest that the initial layers of BERT networks concentrate on basic syntactic information, while the higher layers focus on high-level semantic information. [Ettinger et al., 2020](#ettinger2020bert) applies tests based on psycholinguistic studies to assess the language models' ability to capture linguistic features. The results suggest that probability distributions are sensitive to linguistic distinctions, such as semantic roles, pragmatic reasoning, common sense, etc. These aspects would be evidence of idiosyncrasies embedded in the model during its training.
 
