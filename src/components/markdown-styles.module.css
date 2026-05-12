@@ -5,9 +5,16 @@
 }
 
 .markdown blockquote {
-    @apply my-6 border-l-4 border-gray-300 pl-4 italic text-gray-700 dark:border-gray-700 dark:text-gray-300;
+    @apply my-6 border-l-4 border-gray-300 pl-4 italic  dark:border-gray-700;
 }
 
+.markdown a {
+    @apply underline font-medium text-sky-600;
+}
+
+.markdown a:hover {
+    @apply text-sky-800 font-bold;
+}
 .markdown p,
 
 .markdown ul,
@@ -23,8 +30,12 @@
 .markdown li {
     @apply my-6;
 }
-.markdown blockquote {
-    @apply my-6;
+/*.markdown blockquote {
+    @apply my-6 text-gray-900 dark:text-white;
+}*/
+
+.markdown.prose blockquote p {
+    @apply text-black dark:text-white;
 }
 
 .markdown pre {
@@ -33,7 +44,7 @@
 
 .markdown code {
     /*@apply bg-black p-0 text-inherit;*/
-    @apply bg-gray-500 dark:bg-gray-500;
+    @apply bg-gray-500 dark:bg-gray-300  text-black;
 }
 
 .markdown section[data-footnotes] {

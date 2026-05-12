@@ -50,16 +50,20 @@ export default async function Blog(props: Params) {
             <section className="flex items-center justify-between">
               <h1 className="text-4xl md:text-3xl font-bold text-primary-foreground">
                 <Link href="/blog" className="hover:underline">
-                  Blog
+                  Blog | Thoughts, studies, research and insights
                 </Link>
               </h1>
             </section>
 
+            {/*<div className="my-4 h-px bg-primary-foreground/30" />*/}
+
+            {/*<h2 className="text-sm md:text-base text-primary-foreground/80 max-w-2xl">*/}
+            {/*<h2 className="text-gray-700 text-sm md:text-base text-primary-foreground/80 "></h2>*/}
             <div className="my-4 h-px bg-primary-foreground/30" />
 
             {/*<h2 className="text-sm md:text-base text-primary-foreground/80 max-w-2xl">*/}
             <h2 className="text-gray-700 text-sm md:text-base text-primary-foreground/80 ">
-              Thoughts, studies, research and insights
+              Title: {post.title}
             </h2>
           </div>
         </header>

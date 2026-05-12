@@ -16,7 +16,8 @@ export function PostBody({ content }: Props) {
         {content}
       </ReactMarkdown>*/}
       <div
-        className={`${markdownStyles["markdown"]} prose prose-slate max-w-none text-lg text-gray-800 dark:text-gray-200`}
+        className={`${markdownStyles["markdown"]} `}
+        // className={`${markdownStyles["markdown"]} prose prose-slate max-w-none text-lg text-gray-800 dark:text-gray-200`}
         dangerouslySetInnerHTML={{ __html: content }}
       />
     </div>

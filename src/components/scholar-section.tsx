@@ -79,8 +79,8 @@ export default function ScholarSection() {
           Software Engineering, and Programming.
           <br /> <br />
           Collaborates on research in Medicine and Biology.
-          <br /> <br />
-          <h2 className=" text-xl font-semibold mb-4">Publications</h2>
+          <br /> <br /> 
+          <h2 className="my-5 text-xl font-semibold mb-4">Publications</h2>
           <ul className="space-y-3  leading-relaxed">
             {artigos.map((artigo, index) => (
               <li key={index} className="flex gap-2 text-left">
