@@ -29,7 +29,15 @@ function MobileNavbar() {
   const { theme, setTheme } = useTheme();
 
   return (
-    <div className="flex md:hidden items-center space-x-2">
+    <div className=" flex md:flex justify-start  md:hidden items-center space-x-2">
+      <div className=" flex md:flex items-center justify-start gap-2 w-full">
+        {/*<div className="  md:flex justify-start ">*/}
+        <div className="w-12 h-12 rounded-full border-2 border-sky-500 text-sky-500 flex items-center justify-center font-black text-sm tracking-widest">
+          {" "}
+          FLP
+        </div>
+      </div>
+
       <Button
         variant="ghost"
         size="icon"
@@ -43,11 +51,14 @@ function MobileNavbar() {
 
       <Sheet open={showMobileMenu} onOpenChange={setShowMobileMenu}>
         <SheetTrigger asChild>
-          <Button variant="ghost" size="icon">
+          <Button size="icon">
             <MenuIcon className="h-5 w-5" />
           </Button>
         </SheetTrigger>
-        <SheetContent side="right" className="w-[300px]">
+        <SheetContent
+          side="right"
+          className="bg-white dark:bg-background w-[300px]"
+        >
           <SheetHeader>
             <SheetTitle>Menu</SheetTitle>
           </SheetHeader>
@@ -62,7 +73,11 @@ function MobileNavbar() {
                 Home
               </Link>
             </Button>
-            <Button variant="ghost" className="flex items-center gap-2" asChild>
+            <Button
+              variant="ghost"
+              className="flex items-center gap-2 justify-start"
+              asChild
+            >
               <Link href="/blog">
                 <TbBrandBlogger />
                 {/*<GrBlog />*/}

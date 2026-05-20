@@ -53,20 +53,14 @@ export default async function BlogPage() {
 
           {/* DIVISOR */}
           {/*<div className="my-4 h-px bg-[#085c77]" />*/}
-          <div className="my-4 h-px bg-primary-foreground/30" />
+          {/*<div className="my-4 h-px bg-primary-foreground/30" />*/}
 
-          {/* ID SECTION */}
-          {/*<section className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">*/}
-          {/* ESQUERDA */}
-          <div className="flex items-center gap-3">
-            {/*<img src="/orcid-logo.svg" alt="orcid" className="w-8 h-8" />*/}
+          {/*<div className="flex items-center gap-3">
 
             <h2 className="text-gray-700 text-sm md:text-base text-primary-foreground/80 ">
               Thoughts, studies, research and insights
-              {/*https://orcid.org/0000-0002-3928-5432*/}
             </h2>
-          </div>
-          {/*</section>*/}
+          </div>*/}
         </div>
       </header>
 
