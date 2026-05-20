@@ -78,8 +78,8 @@ async function SidebarHome() {
     //     </CardContent>
     //   </Card>
     // </div>
-    <div className="sticky top-60">
-      <Card className="bg-muted/40 hover:bg-muted/70">
+    <div className="sticky top-40">
+      <Card className="bg-muted/40 ">
         <CardHeader>
           <CardTitle className="text-center text-xl font-semibold ">
             Personal Information and Contact
@@ -90,20 +90,22 @@ async function SidebarHome() {
             <Avatar className="w-20 h-20 border-2 ">
               <AvatarImage src={"/assets/personalphoto.png"} />
             </Avatar>
+            Fagner Leal Pantoja
           </div>
+          <div className="flex items-center text-muted-foreground text-center"></div>
           <div className="mt-4 space-y-1 text-center">
             <div className="text-muted-foreground mb-4 text-center">
               <div className="flex items-center text-muted-foreground">
                 <MapPinIcon className="w-4 h-4 mr-2" />
                 Belém, Brazil
               </div>
+              <div className="flex items-center text-muted-foreground">
+                <MdOutlineEmail className="w-4 h-4 mr-2" />
+                pantoja.ti@gmail.com
+              </div>
             </div>
 
             {/*<p className="text-muted-foreground mb-4 text-center">*/}
-            <div className="flex items-center text-muted-foreground">
-              <MdOutlineEmail className="w-4 h-4 mr-2" />
-              pantoja.ti@gmail.com
-            </div>
             {/*</p>*/}
 
             {/*<p className="text-muted-foreground mb-4 text-left text-x20">
@@ -117,10 +119,12 @@ async function SidebarHome() {
               target="_blank"
               rel="noopener noreferrer"
               className="text-center inline-flex items-center gap-1
-                         bg-primary text-primary-foreground
+                          text-primary-foreground
                          px-5 py-3 rounded-xl
                          hover:opacity-90
-                         transition"
+                         transition
+                         bg-[#25D366] hover:bg-[#1ebe5d] active:scale-95 transition-all duration-150 text-white font-semibold px-5 py-3 rounded-2xl shadow-lg hover:shadow-2xl border border-white/20"
+              // bg-[#25D366] hover:bg-[#1ebe5d] active:scale-95 transition text-white font-semibold px-5 py-3 rounded-xl shadow-md hover:shadow-lg cursor-pointer"
             >
               <FaWhatsapp className="text-x5 " />
               +55 91 98044-6694

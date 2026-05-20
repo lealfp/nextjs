@@ -4,7 +4,7 @@ excerpt: "This text presents a literature review of Language Models (LM), coveri
 coverImage: "/assets/blog/clusters-all-mpnet-base-v2.png"
 date: "2026-05-11T16:58:00.322Z"
 author:
-  name: Fagner Leal Pantoja. In collaboration with Claudia Bauzer Medeiros and André Santanchè
+  name: Fagner Leal Pantoja, in collaboration with Dr. Claudia Bauzer Medeiros and Dr. André Santanchè
   picture: "/assets/personalphoto.png"
 ogImage:
   url: "/assets/blog/clusters-all-mpnet-base-v2.png"
@@ -16,6 +16,7 @@ ogImage:
 
 # Abstract
 
+> This text corresponds to a reduced and adapted version of our previous Technical Report [[https://www.ic.unicamp.br/~reltech/2024/24-01.pdf](https://www.ic.unicamp.br/~reltech/2024/24-01.pdf)] submited to the Institute of Computing (IC) of UNICAMP (Universidade Estadual de Campinas).
 
 This text presents a literature review of Language Models (LM), covering two main topics: (1) The Transformers-based Neural Network used to train modern language models; and (2) The Semantic Space produced by the network training of the LM, which computationaly represents the language being modeled. 
     
@@ -204,10 +205,10 @@ The core of an attention mechanism is the computation over the matrices `K`, `Q`
 
 The attention mechanism operates over the `K`, `Q`, and `V` matrices in order to highlight the prominent patterns observed in the training dataset. The  mechanism is about matching the context of a query `q` (the context of the given sentence) against the most similar context accumulated on the neural memory of `{K,V}` whereupon the network gets information to accomplish the demanded task (e.g., the translation task in the original Transformer model [[Vaswani et al., 2013](#vaswani2017attention)]). As a byproduct of translation, the attention mechanism generates word alignments [[Luong et al., 2015](#luong2015effective). 
 
-As an example, Figure [7](#alignment-matrix) shows an alignment matrix derived from translating an input sentence (in the column) from English to German (in the rows). This matrix helps to visualize how the attention gets the correspondences between all words in a sentence: it highlights  the "attention" each word in the target sentence pays to the words in the source sentence.
+As an example, Figure [5](#alignment-matrix) shows an alignment matrix derived from translating an input sentence (in the column) from English to German (in the rows). This matrix helps to visualize how the attention gets the correspondences between all words in a sentence: it highlights  the "attention" each word in the target sentence pays to the words in the source sentence.
 
 ![image](/assets/blog/alignment-matrix.png)
-*<a id="alignment-matrix"> Figure 7: Word alignments derived from a translation task from English to German. Source: [[Luong et al., 2015](#luong2015effective).</a>*
+*<a id="alignment-matrix"> Figure 5: Word alignments derived from a translation task from English to German. Source: [[Luong et al., 2015](#luong2015effective).</a>*
 
 
 <!--\begin{figure}[!ht]
@@ -217,10 +218,10 @@ As an example, Figure [7](#alignment-matrix) shows an alignment matrix derived f
     \label{fig:alignment-matrix}
 \end{figure}-->
 
-The original Transformer architecture (Figure [8](#transformer)) consists of two stacks of `N` layers of Encoders and Decoders. Subsequent research proposed different architectures [[Tian et al., 2024](#tian2024opportunities)], for example encoder-only such as BERT [[Devlin et al., 2018](#devlin2018bert)], and decoder-only such as GPT [[Radford et al., 2018](#radford2018improving)].
+The original Transformer architecture (Figure [6](#transformer)) consists of two stacks of `N` layers of Encoders and Decoders. Subsequent research proposed different architectures [[Tian et al., 2024](#tian2024opportunities)], for example encoder-only such as BERT [[Devlin et al., 2018](#devlin2018bert)], and decoder-only such as GPT [[Radford et al., 2018](#radford2018improving)].
 
 ![image](/assets/blog/transformer.png)
-*<a id="transformer"> Figure 8: Transformer architecture. Source: [[Vaswani et al., 2013](#vaswani2017attention)].</a>*
+*<a id="transformer"> Figure 6: Transformer architecture. Source: [[Vaswani et al., 2013](#vaswani2017attention)].</a>*
 
 
 <!--\begin{figure}[!ht]
@@ -243,10 +244,10 @@ A Decoder uses the vector `c` received from the Encoder layers to generate the t
 
 
 #### 2.2.4. Multi-Head Attention
-In the so-called Multi-Head Attention, the Transformer projects the vectors `Q`, `K`, and `V` into multiple multi-heads with different learned linear projections. The resulting vectors are concatenated and projected again, resulting in the final vector representation, as depicted in Figure [9](#multi_head_attention). Thus, the Transformer can pay attention to different representation subspaces at different positions [[Vaswani et al., 2013](#vaswani2017attention)], in addition to leveraging parallel computation.
+In the so-called Multi-Head Attention, the Transformer projects the vectors `Q`, `K`, and `V` into multiple multi-heads with different learned linear projections. The resulting vectors are concatenated and projected again, resulting in the final vector representation, as depicted in Figure [7](#multi_head_attention). Thus, the Transformer can pay attention to different representation subspaces at different positions [[Vaswani et al., 2013](#vaswani2017attention)], in addition to leveraging parallel computation.
 
 ![image](/assets/blog/multi_head_attention.png)
-*<a id="multi_head_attention"> Figure 9: Schema of Multi-Head Attention. Source: [[Vaswani et al., 2013](#vaswani2017attention)].</a>*
+*<a id="multi_head_attention"> Figure 7: Schema of Multi-Head Attention. Source: [[Vaswani et al., 2013](#vaswani2017attention)].</a>*
 
 
 <!--\begin{figure}[!ht]
@@ -371,10 +372,10 @@ Through a generalization of Skip-Gram, the SkipThought model [[Kiros et al., 201
 
 The InferSent model [[Conneau et al., 2017](#conneau2017supervised)] employs a BiLSTM siamese network with a final layer of max-pooling. InterSent works as follows: the model is trained in a supervised fashion  using the Stanford Natural Language Inference (SNLI) dataset [[Bowman et al., 2015](#bowman2015large)], surpassing the results of unsupervised methods such as Skip-Thought. The SNLI dataset comprises 570,000 sentence pairs annotated with labels `contradiction`, `entailment`, and `neutral`. InferSent results suggest that Natural Language Inference (NLI) is a highly suitable task for sentence embeddings training. 
 
-The Sentence-BERT (SBERT) model [[Reimers and Gurevych, 2019](#reimers2019sentence)] uses siamese and triplet networks (i.e., different networks with tied weights) to generate sentence embeddings. The training step of Sentence-BERT takes as input a pair of sentences and a similarity value between them. Initially, Sentence-BERT applies a pooling operation on the BERT embeddings to obtain a fixed-size representation (usually 768) for each sentence. As shown in Figure [10](#sbert), in the end, a single fixed-size representation is generated based on the similarity between the two representations. 
+The Sentence-BERT (SBERT) model [[Reimers and Gurevych, 2019](#reimers2019sentence)] uses siamese and triplet networks (i.e., different networks with tied weights) to generate sentence embeddings. The training step of Sentence-BERT takes as input a pair of sentences and a similarity value between them. Initially, Sentence-BERT applies a pooling operation on the BERT embeddings to obtain a fixed-size representation (usually 768) for each sentence. As shown in Figure [8](#sbert), in the end, a single fixed-size representation is generated based on the similarity between the two representations. 
 
 ![image](/assets/blog/sbert.png)
-*<a id="sbert"> Figure 10: The architecture of the siamese network of SBERT. Source: [[Reimers and Gurevych, 2019](#reimers2019sentence)].</a>*
+*<a id="sbert"> Figure 8: The architecture of the siamese network of SBERT. Source: [[Reimers and Gurevych, 2019](#reimers2019sentence)].</a>*
 
 
 <!--\begin{figure}[!ht]

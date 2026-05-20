@@ -11,7 +11,15 @@ async function DesktopNavbar() {
   const user = await currentUser();
   // console.log(user);
   return (
-    <div className="hidden md:flex items-center space-x-4">
+    // <div className="hidden md:flex items-center space-x-4">
+    // <div className="hidden md:flex items-center justify-start gap-4">
+    <div className="hidden md:flex items-center justify-start gap-2 w-full">
+      <div className="px-8 hidden md:flex items-center justify-start gap-2 w-full">
+        <div className="w-12 h-12 rounded-full border-2 border-sky-500 text-sky-500 flex items-center justify-center font-black text-sm tracking-widest">
+          {" "}
+          FLP
+        </div>
+      </div>
       <ModeToggle />
 
       <Button variant="ghost" className="flex items-center gap-2" asChild>
