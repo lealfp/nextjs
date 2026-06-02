@@ -67,6 +67,14 @@ export default async function Home() {
       autores: "Pantoja, F., dos Reis, J., Santanchè, A.",
       revista: "Simpósio Brasileiro de Banco de Dados (SBBD)",
     },
+    {
+      titulo:
+        "Uma Experiência de Integração de Design Thinking e Metodologias Ágeis para o Desenvolvimento de Softwar",
+      // link: "https://eventos.dexl.lncc.br/sbbd2015/anais/SatelliteEvents.pdf",
+      ano: "2013",
+      autores: "De Souza, C. R. B., Ferreira, M., Pantoja, F., Figueiredo, M.",
+      revista: "Fórum de Educação em Engenharia de Software",
+    },
   ];
 
   const projects = [
