@@ -141,12 +141,11 @@ export default async function Home() {
     },
   ];
   const items = [
-    [["Pytorch"], ["JuPyter"]],
+    [["Transformers"], ["BERT"], ["Pytorch"], ["JuPyter"]],
     [["Git"], ["Markdown"], ["SEO"], ["Clerk"], ["Prisma"]],
     [
       ["Tailwind CSS"],
       ["NextJS"],
-
       ["NodeJS"],
       ["AdonisJS"],
       ["JSF"],
