@@ -50,14 +50,14 @@ export default async function Home() {
       autores: "Pantoja, F., Carvalho, M., Santanchè, A.",
       ano: "2022",
       revista:
-        "5th International Joint Conference on Biomedical Engineering Systems and Technologies (HEALTHINF)",
+        "5th International conference on Biomedical Engineering Systems and Technologies (HEALTHINF)",
     },
     {
       titulo: "Generating knowledge networks from phenotypic descriptions",
       link: "https://ieeexplore.ieee.org/abstract/document/7870885",
       autores: "Pantoja, F., Cavoto, P., dos Reis, J., Santanchè, A.",
       ano: "2016",
-      revista: "IEEE 12th International Conference on e-Science",
+      revista: "(IEEE) 12th International conference on e-Science",
     },
 
     {
@@ -65,15 +65,41 @@ export default async function Home() {
       link: "https://eventos.dexl.lncc.br/sbbd2015/anais/SatelliteEvents.pdf",
       ano: "2015",
       autores: "Pantoja, F., dos Reis, J., Santanchè, A.",
-      revista: "Simpósio Brasileiro de Banco de Dados (SBBD)",
+      revista: "30º Simpósio Brasileiro de Banco de Dados (SBBD)",
     },
     {
       titulo:
-        "Uma Experiência de Integração de Design Thinking e Metodologias Ágeis para o Desenvolvimento de Softwar",
+        "Uma Experiência de Integração de Design Thinking e Metodologias Ágeis para o Desenvolvimento de Software",
       // link: "https://eventos.dexl.lncc.br/sbbd2015/anais/SatelliteEvents.pdf",
       ano: "2013",
       autores: "De Souza, C. R. B., Ferreira, M., Pantoja, F., Figueiredo, M.",
       revista: "Fórum de Educação em Engenharia de Software",
+    },
+    {
+      titulo:
+        "Virtual Patient Platform and Data Space for Sharing, Learning, Discussing, and Researching",
+      link: "https://ieeexplore.ieee.org/abstract/document/10254792",
+      ano: "2023",
+      autores:
+        "Santanchè, A., Mattosinho, H., Mota, M., Pantoja, F., Leite, G., Tonelli, A., Valente, F., Solano, J., Queirós, S., Grangeia, T., Carvalho, M.",
+      revista: "(IEEE) 19th International conference on eScience (eScience)",
+    },
+    {
+      titulo: "Analytical design of clinical cases for educational games",
+      link: "https://link.springer.com/chapter/10.1007/978-3-030-34644-7_29",
+      ano: "2019",
+      autores:
+        "Mota, M., Pantoja, F., Mota, M., Grangeia, T., Carvalho, M., Santanchè, A.",
+      revista: " (Springer) Entertainment Computing and Serious Games",
+    },
+    {
+      titulo:
+        "Progressive Data Integration and Semantic Enrichment Based on LinkedScales and Trails",
+      link: "https://ceur-ws.org/Vol-1795/paper42.pdf",
+      ano: "2016",
+      autores: "Mota, M., Pantoja, F., dos Reis, J., Santanche, A.",
+      revista:
+        "9th International conference on Semantic Web Applications and Tools for the Life Sciences (SWAT4LS)",
     },
   ];
 
