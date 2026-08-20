@@ -22,6 +22,10 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://lealpantoja.com.br"),
+  alternates: {
+  canonical: "/",
+  },
   title: "Home | Fagner Leal Pantoja",
   description:
     "Personal website of Fagner Leal Pantoja, a Fullstack Developer. Available for select freelance projects.",
