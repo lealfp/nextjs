@@ -110,11 +110,16 @@ export async function generateMetadata(props: Params): Promise<Metadata> {
   const title = `${post.title} | Blog by Fagner Leal Pantoja`;
 
   return {
-    title,
+    title: title,
+    description: post.excerpt,
+
     openGraph: {
       title,
       images: [post.ogImage.url],
     },
+    alternates: {
+          canonical: `/blog/${post.slug}`,
+        },
   };
 }
 

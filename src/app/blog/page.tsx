@@ -12,6 +12,9 @@ import PostCarousel from "@/components/PostCarousel";
 import Avatar from "@/components/avatar";
 
 export const metadata = {
+  alternates: {
+      canonical: "/blog",
+    },
   title: "Blog | Fagner Leal Pantoja",
   description:
     "Thoughts, studies, research and insights by Fagner Leal Pantoja.",
