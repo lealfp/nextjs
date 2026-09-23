@@ -25,7 +25,7 @@ import Link from "next/link";
 
 function MobileNavbar() {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
-  const { isSignedIn } = useAuth();
+  // const { isSignedIn } = useAuth();
   const { theme, setTheme } = useTheme();
 
   return (
@@ -85,7 +85,7 @@ function MobileNavbar() {
                 <span className="">Blog</span>
               </Link>
             </Button>
-            {isSignedIn ? (
+            {/*{isSignedIn ? (
               <>
                 <Button
                   variant="ghost"
@@ -123,7 +123,7 @@ function MobileNavbar() {
                   Sign In
                 </Button>
               </SignInButton>
-            )}
+            )}*/}
           </nav>
         </SheetContent>
       </Sheet>

@@ -37,7 +37,7 @@ export default async function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <ClerkProvider>
+    // <ClerkProvider>
       <html lang="en" suppressHydrationWarning>
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}
@@ -59,6 +59,6 @@ export default async function RootLayout({
           </footer>
         </body>
       </html>
-    </ClerkProvider>
+    //</ClerkProvider>
   );
 }
