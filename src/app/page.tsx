@@ -21,6 +21,13 @@ export default async function Home() {
   // const dbUserId = await getDbUserId();
   const artigos = [
     {
+      titulo: "Semantic Representations based on Neural Topic Models",
+      link: "https://lib.jucs.org/article/160058/list/11/",
+      ano: "2026",
+      autores: "Pantoja, F., Santanchè, A. e Medeiros, C.B.",
+      revista: "The Journal of Universal Computer Science (J.UCS)",
+    },
+    {
       titulo: "Semantic Representations based on Language Models",
       link: "https://repositorio.unicamp.br/acervo/detalhe/1509363",
       ano: "2025",
@@ -38,7 +45,7 @@ export default async function Home() {
       titulo:
         "A bibliographic survey of Neural Language Models with applications in topic modeling and clinical studies",
       link: "https://www.ic.unicamp.br/~reltech/2024/24-01.pdf",
-      autores: "Pantoja, F., Santanchè, A., Medeiros, C.B.",
+      autores: "Pantoja, F., Santanchè, A. e Medeiros, C.B.",
       ano: "2024",
       revista:
         "Technical Report of the Instituto de Computação at Universidade Estadual de Campinas",

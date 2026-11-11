@@ -2,7 +2,7 @@
 title: "Guia dança de salão"
 excerpt: "Guia contendo instruções e passos de diversos estilos de dança, incluindo: Baile da Saudade, Brega Marcante, TechnoBrega, Reggae e Forró"
 coverImage: "/assets/espaco_semantico_danca.png"
-date: "2026-04-29T16:58:00.322Z"
+date: "2026-11-11T13:06:00.322Z"
 author:
   name: Fagner Leal Pantoja
   picture: "/assets/personalphoto.png"
@@ -160,4 +160,4 @@ ogImage:
   
   ## Giros
   
-- chuveirinho:  na abertura da perna esquerda, segurar entrelaçando as mão por sobre a conduzida rotacinando junto com a base abertura
+- chuveirinho:  na abertura da perna esquerda, segurar entrelaçando as mão por sobre a conduzida rotacinando junto com a base da abertura
