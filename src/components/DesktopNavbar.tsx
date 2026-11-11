@@ -4,11 +4,11 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { SignInButton, UserButton } from "@clerk/nextjs";
 import ModeToggle from "./ModeToggle";
-import { currentUser } from "@clerk/nextjs/server";
+// import { currentUser } from "@clerk/nextjs/server";
 // import { FaBlogger } from "react-icons/fa6";
 
 async function DesktopNavbar() {
-  const user = await currentUser();
+  // const user = await currentUser();
   // console.log(user);
   return (
     // <div className="hidden md:flex items-center space-x-4">

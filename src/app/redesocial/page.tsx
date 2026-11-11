@@ -1,15 +1,15 @@
 import Sidebar from "@/components/Sidebar";
 import WhoToFollow from "@/components/WhoToFollow";
-import { getPosts } from "@/actions/post.action";
-import { getDbUserId } from "@/actions/user.action";
+// import { getPosts } from "@/actions/post.action";
+// import { getDbUserId } from "@/actions/user.action";
 import CreatePost from "@/components/CreatePost";
 import PostCard from "@/components/PostCard";
-import { currentUser } from "@clerk/nextjs/server";
+// import { currentUser } from "@clerk/nextjs/server";
 
 export default async function Redesocial() {
-  const user = await currentUser();
-  const posts = await getPosts();
-  const dbUserId = await getDbUserId();
+  // const user = await currentUser();
+  // const posts = await getPosts();
+  // const dbUserId = await getDbUserId();
 
   return (
     <main className="py-8">
@@ -21,7 +21,7 @@ export default async function Redesocial() {
 
           <div className="lg:col-span-9">
             <div className="grid grid-cols-1 lg:grid-cols-10 gap-6">
-              <div className="lg:col-span-6">
+              {/*<div className="lg:col-span-6">
                 {user ? <CreatePost /> : null}
 
                 <div className="space-y-6">
@@ -29,7 +29,7 @@ export default async function Redesocial() {
                     <PostCard key={post.id} post={post} dbUserId={dbUserId} />
                   ))}
                 </div>
-              </div>
+              </div>*/}
 
               <div className="hidden lg:block lg:col-span-4 sticky top-20">
                 <WhoToFollow />

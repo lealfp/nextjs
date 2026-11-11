@@ -6,9 +6,9 @@ import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/components/Navbar";
 import Sidebar from "@/components/Sidebar";
 import { Toaster } from "react-hot-toast";
-import { currentUser } from "@clerk/nextjs/server";
+//import { currentUser } from "@clerk/nextjs/server";
 import prisma from "@/lib/prisma";
-import { auth } from "@clerk/nextjs/server";
+//import { auth } from "@clerk/nextjs/server";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",

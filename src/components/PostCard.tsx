@@ -1,7 +1,7 @@
 "use client";
 
 import { createComment, deletePost, getPosts, toggleLike } from "@/actions/post.action";
-import { SignInButton, useUser } from "@clerk/nextjs";
+// import { SignInButton, useUser } from "@clerk/nextjs";
 import { useState } from "react";
 import toast from "react-hot-toast";
 import { Card, CardContent } from "./ui/card";
@@ -116,7 +116,7 @@ function PostCard({ post, dbUserId }: { post: Post; dbUserId: string | null }) {
 
           {/* LIKE & COMMENT BUTTONS */}
           <div className="flex items-center pt-2 space-x-4">
-            {user ? (
+            {/*{user ? (
               <Button
                 variant="ghost"
                 size="sm"
@@ -139,7 +139,7 @@ function PostCard({ post, dbUserId }: { post: Post; dbUserId: string | null }) {
                   <span>{optimisticLikes}</span>
                 </Button>
               </SignInButton>
-            )}
+            )}*/}
 
             <Button
               variant="ghost"

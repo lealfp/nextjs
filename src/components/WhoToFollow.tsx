@@ -1,20 +1,20 @@
-import { getRandomUsers } from "@/actions/user.action";
+// import { getRandomUsers } from "@/actions/user.action";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 import Link from "next/link";
 import { Avatar, AvatarImage } from "./ui/avatar";
 import FollowButton from "./FollowButton";
 
 async function WhoToFollow() {
-  const users = await getRandomUsers();
+  // const users = await getRandomUsers();
 
-  if (users.length === 0) return null;
+  // if (users.length === 0) return null;
 
   return (
     <Card>
       <CardHeader>
         <CardTitle>Who to Follow</CardTitle>
       </CardHeader>
-      <CardContent>
+      {/*<CardContent>
         <div className="space-y-4">
           {users.map((user) => (
             <div key={user.id} className="flex gap-2 items-center justify-between ">
@@ -36,7 +36,7 @@ async function WhoToFollow() {
             </div>
           ))}
         </div>
-      </CardContent>
+      </CardContent>*/}
     </Card>
   );
 }
