@@ -1,6 +1,6 @@
 "use client";
 
-import { UploadDropzone } from "@/lib/uploadthing";
+// import { UploadDropzone } from "@/lib/uploadthing";
 import { XIcon } from "lucide-react";
 
 interface ImageUploadProps {
@@ -29,7 +29,7 @@ function ImageUpload({ endpoint, onChange, value }: ImageUploadProps) {
     );
   }
   return (
-    <UploadDropzone
+    {/*<UploadDropzone
       endpoint={endpoint}
       onClientUploadComplete={(res) => {
         onChange(res?.[0].url);
@@ -37,7 +37,7 @@ function ImageUpload({ endpoint, onChange, value }: ImageUploadProps) {
       onUploadError={(error: Error) => {
         console.log(error);
       }}
-    />
+    />*/}
   );
 }
 export default ImageUpload;

@@ -1,9 +1,9 @@
-import Sidebar from "@/components/Sidebar";
+// import Sidebar from "@/components/Sidebar";
 import WhoToFollow from "@/components/WhoToFollow";
 // import { getPosts } from "@/actions/post.action";
 // import { getDbUserId } from "@/actions/user.action";
 import CreatePost from "@/components/CreatePost";
-import PostCard from "@/components/PostCard";
+// import PostCard from "@/components/PostCard";
 // import { currentUser } from "@clerk/nextjs/server";
 
 export default async function Redesocial() {
@@ -16,7 +16,7 @@ export default async function Redesocial() {
       <div className="max-w-7xl mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
           <div className="hidden lg:block lg:col-span-3">
-            <Sidebar />
+            {/*<Sidebar />*/}
           </div>
 
           <div className="lg:col-span-9">
