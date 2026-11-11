@@ -1,16 +1,17 @@
 "use server";
 
 import prisma from "@/lib/prisma";
-import { getDbUserId } from "./user.action";
+// import { getDbUserId } from "./user.action";
 
 export async function getNotifications() {
   try {
-    const userId = await getDbUserId();
-    if (!userId) return [];
+    // const userId = await getDbUserId();
+    // if (!userId)
+    return [];
 
     const notifications = await prisma.notification.findMany({
       where: {
-        userId,
+        // userId,
       },
       include: {
         creator: {

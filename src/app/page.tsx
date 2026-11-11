@@ -1,10 +1,10 @@
 // "use client";
-import { getPosts } from "@/actions/post.action";
-import { getDbUserId } from "@/actions/user.action";
+// import { getPosts } from "@/actions/post.action";
+// import { getDbUserId } from "@/actions/user.action";
 import CreatePost from "@/components/CreatePost";
 import PostCard from "@/components/PostCard";
 import WhoToFollow from "@/components/WhoToFollow";
-import { currentUser } from "@clerk/nextjs/server";
+// import { currentUser } from "@clerk/nextjs/server";
 import Sidebar from "@/components/Sidebar";
 import SidebarHome from "@/components/SidebarHome";
 // import Cards from "@/components/Cards";
